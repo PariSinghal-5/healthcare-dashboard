@@ -14,48 +14,79 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            text-align: center;
-            background-color: #f4f7fb;
+            padding: 24px;
+            background: #f4f7fb;
+            color: #263449;
         }
 
-        h1 {
-            color: #333;
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: #23395d;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #64748b;
+        }
+
+        .section {
+            max-width: 1400px;
+            margin: 0 auto 35px;
+        }
+
+        .section h2 {
+            color: #23395d;
             margin-bottom: 8px;
         }
 
-        p {
-            color: #666;
-            margin-bottom: 20px;
+        .section-description {
+            color: #64748b;
+            margin-bottom: 18px;
         }
 
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: auto;
-            background: white;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .dashboard-card {
+            background: #ffffff;
+            padding: 16px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
         }
 
         .tableauPlaceholder {
             width: 100%;
-            margin: auto;
+            position: relative;
         }
 
         .tableauViz {
             width: 100% !important;
-            min-height: 700px;
+        }
+
+        footer {
+            text-align: center;
+            color: #64748b;
+            padding: 20px 0;
+            font-size: 14px;
         }
 
         @media (max-width: 768px) {
             body {
-                padding: 10px;
+                padding: 12px;
             }
 
-            .tableauViz {
-                min-height: 900px;
+            .dashboard-card {
+                padding: 6px;
+            }
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            .section h2 {
+                font-size: 21px;
             }
         }
     </style>
@@ -63,57 +94,113 @@
 
 <body>
 
-    <h1>Diabetes &amp; Health Risk Overview</h1>
-    <p>Part 1: Integrating a Live Tableau Dashboard</p>
+    <header>
+        <h1>Diabetes &amp; Health Risk Overview</h1>
+        <p>Healthcare Data Analytics and Visualization</p>
+    </header>
 
-    <div class="container">
+    <!-- SECTION 1: TABLEAU DASHBOARD -->
+    <section class="section">
+        <h2>1. Healthcare Dashboard</h2>
+        <p class="section-description">
+            Explore patient statistics, diabetes analysis,
+            gender distribution, BMI and glucose levels.
+        </p>
 
-        <div
-            class="tableauPlaceholder"
-            id="viz1793032735421"
-            style="position: relative"
-        >
-            <noscript>
-                <a href="https://public.tableau.com/views/HealthcareProject_17930304128550/Dashboard2">
-                    <img
-                        alt="Diabetes & Health Risk Overview"
-                        src="https://public.tableau.com/static/images/He/HealthcareProject_17930304128550/Dashboard2/1.png"
-                        style="border: none; width: 100%;"
-                    />
-                </a>
-            </noscript>
+        <div class="dashboard-card">
+            <div class="tableauPlaceholder" id="dashboardViz">
+                <noscript>
+                    <a href="https://public.tableau.com/">
+                        View the Tableau Dashboard
+                    </a>
+                </noscript>
 
-            <object class="tableauViz" style="display: none;">
-                <param name="host_url" value="https://public.tableau.com/" />
-                <param name="embed_code_version" value="3" />
-                <param name="site_root" value="" />
-                <param name="name" value="HealthcareProject_17930304128550/Dashboard2" />
-                <param name="tabs" value="no" />
-                <param name="toolbar" value="yes" />
-                <param name="static_image" value="https://public.tableau.com/static/images/He/HealthcareProject_17930304128550/Dashboard2/1.png" />
-                <param name="animate_transition" value="yes" />
-                <param name="display_static_image" value="yes" />
-                <param name="display_spinner" value="yes" />
-                <param name="display_overlay" value="yes" />
-                <param name="display_count" value="yes" />
-                <param name="language" value="en-US" />
-            </object>
+                <object class="tableauViz" style="display:none;">
+                    <param name="host_url"
+                           value="https://public.tableau.com/" />
+                    <param name="embed_code_version" value="3" />
+                    <param name="site_root" value="" />
+                    <param name="name"
+                           value="HealthcareProject_17930304128550/Dashboard2" />
+                    <param name="tabs" value="no" />
+                    <param name="toolbar" value="yes" />
+                    <param name="animate_transition" value="yes" />
+                    <param name="display_static_image" value="yes" />
+                    <param name="display_spinner" value="yes" />
+                    <param name="display_overlay" value="yes" />
+                    <param name="display_count" value="yes" />
+                    <param name="language" value="en-US" />
+                </object>
+            </div>
         </div>
+    </section>
 
-    </div>
+    <!-- SECTION 2: TABLEAU STORY -->
+    <section class="section">
+        <h2>2. Healthcare Data Story</h2>
+        <p class="section-description">
+            Navigate through the three story points to understand
+            diabetes trends and patient health metrics.
+        </p>
 
-    <script type="text/javascript">
-        const divElement = document.getElementById("viz1793032735421");
-        const vizElement = divElement.getElementsByTagName("object")[0];
+        <div class="dashboard-card">
+            <div class="tableauPlaceholder" id="storyViz">
+                <noscript>
+                    <a href="https://public.tableau.com/">
+                        View the Tableau Story
+                    </a>
+                </noscript>
 
-        vizElement.style.width = "100%";
-        vizElement.style.height = window.innerWidth > 768 ? "800px" : "1000px";
+                <object class="tableauViz" style="display:none;">
+                    <param name="host_url"
+                           value="https://public.tableau.com/" />
+                    <param name="embed_code_version" value="3" />
+                    <param name="site_root" value="" />
+                    <param name="name"
+                           value="HealthcareProject_17930304128550/Story1" />
+                    <param name="tabs" value="no" />
+                    <param name="toolbar" value="yes" />
+                    <param name="animate_transition" value="yes" />
+                    <param name="display_static_image" value="yes" />
+                    <param name="display_spinner" value="yes" />
+                    <param name="display_overlay" value="yes" />
+                    <param name="display_count" value="yes" />
+                    <param name="language" value="en-US" />
+                    <param name="filter" value="publish=yes" />
+                </object>
+            </div>
+        </div>
+    </section>
 
-        const scriptElement = document.createElement("script");
-        scriptElement.src =
-            "https://public.tableau.com/javascripts/api/viz_v1.js";
+    <footer>
+        Healthcare Project | Tableau Public Visualization
+    </footer>
 
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    <script>
+        function loadTableauViz(containerId, heightRatio) {
+            const container = document.getElementById(containerId);
+            const viz = container.querySelector("object");
+
+            function setSize() {
+                const width = container.clientWidth;
+                viz.style.width = width + "px";
+                viz.style.height =
+                    Math.max(700, width * heightRatio) + "px";
+            }
+
+            setSize();
+
+            const script = document.createElement("script");
+            script.src =
+                "https://public.tableau.com/javascripts/api/viz_v1.js";
+
+            viz.parentNode.insertBefore(script, viz);
+
+            window.addEventListener("resize", setSize);
+        }
+
+        loadTableauViz("dashboardViz", 0.70);
+        loadTableauViz("storyViz", 0.75);
     </script>
 
 </body>
