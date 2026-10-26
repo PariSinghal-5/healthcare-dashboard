@@ -1,25 +1,120 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Healthcare Project Dashboard</title>
+
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; text-align: center; background-color: #f4f7f6; }
-        h1 { color: #333; margin-bottom: 5px; }
-        p { color: #666; margin-bottom: 20px; }
-        .container { display: flex; justify-content: center; align-items: center; width: 100%; }
-        iframe { width: 1000px; height: 827px; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: white; }
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background-color: #f4f7fb;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .tableauPlaceholder {
+            width: 100%;
+            margin: auto;
+        }
+
+        .tableauViz {
+            width: 100% !important;
+            min-height: 700px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .tableauViz {
+                min-height: 900px;
+            }
+        }
     </style>
 </head>
+
 <body>
 
-    <h1>Diabetes & Health Risk Overview</h1>
-    <p>Pari Singhal - Live Tableau Dashboard Integration</p>
+    <h1>Diabetes &amp; Health Risk Overview</h1>
+    <p>Part 1: Integrating a Live Tableau Dashboard</p>
 
     <div class="container">
-        <iframe src="https://tableau.com"></iframe>
+
+        <div
+            class="tableauPlaceholder"
+            id="viz1793032735421"
+            style="position: relative"
+        >
+            <noscript>
+                <a href="https://public.tableau.com/views/HealthcareProject_17930304128550/Dashboard2">
+                    <img
+                        alt="Diabetes & Health Risk Overview"
+                        src="https://public.tableau.com/static/images/He/HealthcareProject_17930304128550/Dashboard2/1.png"
+                        style="border: none; width: 100%;"
+                    />
+                </a>
+            </noscript>
+
+            <object class="tableauViz" style="display: none;">
+                <param name="host_url" value="https://public.tableau.com/" />
+                <param name="embed_code_version" value="3" />
+                <param name="site_root" value="" />
+                <param name="name" value="HealthcareProject_17930304128550/Dashboard2" />
+                <param name="tabs" value="no" />
+                <param name="toolbar" value="yes" />
+                <param name="static_image" value="https://public.tableau.com/static/images/He/HealthcareProject_17930304128550/Dashboard2/1.png" />
+                <param name="animate_transition" value="yes" />
+                <param name="display_static_image" value="yes" />
+                <param name="display_spinner" value="yes" />
+                <param name="display_overlay" value="yes" />
+                <param name="display_count" value="yes" />
+                <param name="language" value="en-US" />
+            </object>
+        </div>
+
     </div>
+
+    <script type="text/javascript">
+        const divElement = document.getElementById("viz1793032735421");
+        const vizElement = divElement.getElementsByTagName("object")[0];
+
+        vizElement.style.width = "100%";
+        vizElement.style.height = window.innerWidth > 768 ? "800px" : "1000px";
+
+        const scriptElement = document.createElement("script");
+        scriptElement.src =
+            "https://public.tableau.com/javascripts/api/viz_v1.js";
+
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
 
 </body>
 </html>
