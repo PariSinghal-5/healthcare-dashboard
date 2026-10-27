@@ -14,7 +14,7 @@ Use the filters and hover over the charts to explore patient data by gender, age
 
 ## 🖼️ Dashboard Preview
 
-![Dashboard Preview](healthcare--dashboard.png)
+![Dashboard Preview](healthcare--dashboard.png.png)
 
 ---
 
