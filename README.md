@@ -1,11 +1,11 @@
 # 🏥 Smart Healthcare & Diabetes Risk Analytics Dashboard
 
-![Dashboard Preview](healthcaredashboard.png)
+![Dashboard Preview](healthcare-dashboard.png)
 
 > An interactive Tableau dashboard that uncovers how clinical biometrics, patient demographics, and lifestyle habits influence diabetes and cardiovascular risk.
 
 ## 🌐 Live Demo
-👉 **[Explore the Interactive Dashboard](https://pari-singhal-5.github.io/healthcare-dashboard/)**
+👉 **[Explore the Interactive Dashboard](https://PariSinghal-5.github.io/healthcare-dashboard/)**
 
 ## 🎯 Project Objective
 Healthcare data is often hard to interpret in raw form. This project turns patient records into clear visual stories to answer questions like:
