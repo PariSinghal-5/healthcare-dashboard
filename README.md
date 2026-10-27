@@ -1,42 +1,73 @@
 # 🏥 Smart Healthcare & Diabetes Risk Analytics Dashboard
 
-![Dashboard Preview](healthcare-dashboard.png)
+> An interactive Tableau dashboard that explores how patient demographics, clinical biometrics, and lifestyle habits relate to diabetes and cardiovascular risk.
 
-> An interactive Tableau dashboard that uncovers how clinical biometrics, patient demographics, and lifestyle habits influence diabetes and cardiovascular risk.
+---
 
-## 🌐 Live Demo
-👉 **[Explore the Interactive Dashboard](https://PariSinghal-5.github.io/healthcare-dashboard/)**
+## 🌐 Live Interactive Dashboard
+
+👉 **[Open the Live Dashboard](https://PariSinghal-5.github.io/healthcare-dashboard/)**
+
+Use the filters and hover over the charts to explore patient data by gender, age, diabetes status, and lifestyle factors.
+
+---
+
+## 🖼️ Dashboard Preview
+
+![Dashboard Preview](healthcare--dashboard.png)
+
+---
 
 ## 🎯 Project Objective
-Healthcare data is often hard to interpret in raw form. This project turns patient records into clear visual stories to answer questions like:
 
-- Which age groups and genders are most at risk?
-- How do glucose levels and BMI relate to diabetes?
-- How much do smoking, alcohol, and low physical activity raise the overall health risk?
-- Which symptoms commonly appear together, and how do they link to blood pressure and cholesterol?
+Raw healthcare data is hard to interpret. This project converts patient records into clear visuals to answer questions such as:
 
-## 📊 Dashboard Walkthrough
+- How are patients distributed across gender and age groups?
+- How many patients are diabetic, and how do glucose and BMI compare between groups?
+- How do smoking, alcohol, and exercise levels relate to the Health Risk Score?
+- At what age do heart disease and stroke values start rising?
+- How do symptoms (chest pain, dizziness, fatigue) relate to blood pressure, cholesterol, and stroke?
 
-| Section | What it shows |
-|---|---|
-| **Executive Health Dashboard** | One-screen summary of all key clinical and lifestyle metrics |
-| **Demographics Analysis** | Gender distribution and age-wise patient segmentation |
-| **Clinical Insights** | Glucose levels and BMI, and their correlation with diabetes incidence |
-| **Lifestyle & Advanced Risks** | Heatmap of smoking, alcohol, and low exercise against Health Risk Score, plus age-wise heart disease and stroke risk |
-| **Symptom Matrix** | Co-occurrence of chest pain, dizziness, and fatigue against blood pressure and cholesterol |
+---
 
-## 🔍 Key Insights
-- *(Add finding 1, e.g. which age group shows the highest risk)*
-- *(Add finding 2, e.g. relationship between BMI and diabetes)*
-- *(Add finding 3, e.g. impact of lifestyle habits on risk score)*
+## ✨ Key Dashboard Features
+
+- **Single-screen overview:** All key charts are combined in one unified view for quick analysis.
+- **Demographic analysis:** Gender overview, gender-wise patient count, and age-wise patient distribution.
+- **Diabetes analysis:** Comparison of diabetic and non-diabetic patients, along with glucose distribution by diabetes status.
+- **Clinical insights:** BMI analysis by heart disease status.
+- **Lifestyle risk heatmap:** Color-coded heatmap showing the Health Risk Score across smoking, alcohol, and exercise level combinations.
+- **Age-wise risk tracking:** Side-by-side view of heart disease and stroke values across age groups.
+- **Symptom matrix:** Maps dizziness, fatigue, and chest pain against blood pressure, cholesterol, and stroke.
+- **Interactive exploration:** Hover tooltips and filters let users explore the data in detail.
+
+---
 
 ## 🛠️ Tools & Technologies
 
 | Category | Tool | Purpose |
 |---|---|---|
-| **Data Visualization** | Tableau Public | Building charts, heatmaps, and the interactive dashboard |
-| **Data Preparation** | Excel / CSV | Data storage, cleaning, and formatting |
-| **Analysis** | Tableau Calculated Fields | Creating the Health Risk Score and age groups |
-| **Interactivity** | Filters & Dashboard Actions | Letting users explore data by demographics and risk factors |
-| **Storytelling** | Tableau Story Points | Organizing insights into a logical flow |
-| **Version Control** | Git & GitHub | Project tracking and repository management
+| **Data Visualization** | Tableau Public | Building charts, heatmap, and the interactive dashboard |
+| **Data Source** | CSV / Excel | Smart Healthcare Dataset |
+| **Hosting** | GitHub Pages | Serving the dashboard as a live web page |
+| **Version Control** | Git & GitHub | Repository management |
+
+---
+
+## 📁 Dataset
+
+**Smart Healthcare Dataset** with these types of fields:
+
+- **Demographics:** age, gender
+- **Clinical metrics:** glucose, BMI, blood pressure, cholesterol
+- **Lifestyle factors:** smoking, alcohol, exercise level
+- **Symptoms and conditions:** chest pain, dizziness, fatigue, heart disease, stroke, diabetes
+
+---
+
+## 💻 How to Run Locally
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/PariSinghal-5/healthcare-dashboard.git
+cd healthcare-dashboard
