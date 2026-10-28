@@ -1,14 +1,14 @@
 # 🏥 Smart Healthcare & Diabetes Risk Analytics Dashboard
 
-> An interactive Tableau dashboard that explores how patient demographics, clinical biometrics, and lifestyle habits relate to diabetes and cardiovascular risk.
+> An interactive healthcare analytics project built using Tableau Public and GitHub Pages. It explores patient demographics, diabetes, stroke risk, lifestyle factors, and health-related patterns through 3 interactive dashboards and 1 comprehensive healthcare story.
 
 ---
 
 ## 🌐 Live Interactive Dashboard
 
-👉 **[Open the Live Dashboard](https://PariSinghal-5.github.io/healthcare-dashboard/)**
+👉 **[Open the Live Healthcare Dashboard](https://PariSinghal-5.github.io/healthcare-dashboard/)**
 
-Use the filters and hover over the charts to explore patient data by gender, age, diabetes status, and lifestyle factors.
+Explore all four Tableau visualizations to understand patient demographics, health conditions, lifestyle factors, and healthcare risk patterns.
 
 ---
 
@@ -20,26 +20,49 @@ Use the filters and hover over the charts to explore patient data by gender, age
 
 ## 🎯 Project Objective
 
-Raw healthcare data is hard to interpret. This project converts patient records into clear visuals to answer questions such as:
+The growing prevalence of chronic diseases such as diabetes, heart disease, and stroke creates a major challenge for healthcare providers in identifying high-risk patients at an early stage.
+
+This project converts healthcare data into interactive visualizations to help explore questions such as:
 
 - How are patients distributed across gender and age groups?
 - How many patients are diabetic, and how do glucose and BMI compare between groups?
-- How do smoking, alcohol, and exercise levels relate to the Health Risk Score?
-- At what age do heart disease and stroke values start rising?
-- How do symptoms (chest pain, dizziness, fatigue) relate to blood pressure, cholesterol, and stroke?
+- How do lifestyle factors such as smoking, alcohol, and exercise relate to health risks?
+- How do heart disease and stroke patterns vary across age groups?
+- How do different clinical and lifestyle factors relate to overall patient health?
 
 ---
 
 ## ✨ Key Dashboard Features
 
-- **Single-screen overview:** All key charts are combined in one unified view for quick analysis.
-- **Demographic analysis:** Gender overview, gender-wise patient count, and age-wise patient distribution.
-- **Diabetes analysis:** Comparison of diabetic and non-diabetic patients, along with glucose distribution by diabetes status.
-- **Clinical insights:** BMI analysis by heart disease status.
-- **Lifestyle risk heatmap:** Color-coded heatmap showing the Health Risk Score across smoking, alcohol, and exercise level combinations.
-- **Age-wise risk tracking:** Side-by-side view of heart disease and stroke values across age groups.
-- **Symptom matrix:** Maps dizziness, fatigue, and chest pain against blood pressure, cholesterol, and stroke.
-- **Interactive exploration:** Hover tooltips and filters let users explore the data in detail.
+This project includes **3 interactive Tableau dashboards and 1 Tableau Story**.
+
+### 1. Patient Demographics & Health Analysis
+
+- Gender overview and gender-wise patient distribution.
+- Age-wise patient analysis.
+- Diabetes-related patient statistics.
+- Clinical health metrics and patient demographics.
+
+### 2. Health & Stroke Risk Analysis
+
+- Analysis of stroke-related health patterns.
+- Exploration of patient health conditions.
+- Comparison of relevant clinical and demographic factors.
+- Interactive exploration of health risk patterns.
+
+### 3. Lifestyle & Health Risk Analysis
+
+- Analysis of lifestyle-related health factors.
+- Exploration of smoking, alcohol, and exercise patterns.
+- Health risk score analysis.
+- Interactive visualization of lifestyle and health relationships.
+
+### 4. Health360: Comprehensive Healthcare Risk and Analysis
+
+- A comprehensive Tableau Story bringing together healthcare insights.
+- Navigate through story points to explore different aspects of healthcare data.
+- Understand patient demographics, health conditions, and risk-related patterns.
+- Interactive storytelling for a clear and structured presentation of insights.
 
 ---
 
@@ -47,27 +70,65 @@ Raw healthcare data is hard to interpret. This project converts patient records 
 
 | Category | Tool | Purpose |
 |---|---|---|
-| **Data Visualization** | Tableau Public | Building charts, heatmap, and the interactive dashboard |
-| **Data Source** | CSV / Excel | Smart Healthcare Dataset |
-| **Hosting** | GitHub Pages | Serving the dashboard as a live web page |
-| **Version Control** | Git & GitHub | Repository management |
+| Data Visualization | Tableau Public | Building interactive dashboards and story |
+| Data Source | CSV / Excel | Smart Healthcare Dataset |
+| Web Development | HTML, CSS | Creating the dashboard website |
+| Hosting | GitHub Pages | Hosting the interactive dashboard |
+| Version Control | Git & GitHub | Repository management |
 
 ---
 
 ## 📁 Dataset
 
-**Smart Healthcare Dataset** with these types of fields:
+**Smart Healthcare Dataset**
 
-- **Demographics:** age, gender
-- **Clinical metrics:** glucose, BMI, blood pressure, cholesterol
-- **Lifestyle factors:** smoking, alcohol, exercise level
-- **Symptoms and conditions:** chest pain, dizziness, fatigue, heart disease, stroke, diabetes
+The dataset includes different types of healthcare-related fields:
+
+- **Demographics:** Age, gender
+- **Clinical metrics:** Glucose, BMI, blood pressure, cholesterol
+- **Lifestyle factors:** Smoking, alcohol, exercise level
+- **Symptoms and conditions:** Chest pain, dizziness, fatigue, heart disease, stroke, diabetes
 
 ---
 
 ## 💻 How to Run Locally
 
-**1. Clone the repository**
+### 1. Clone the repository
+
 ```bash
 git clone https://github.com/PariSinghal-5/healthcare-dashboard.git
+```
+
+### 2. Navigate to the project folder
+
+```bash
 cd healthcare-dashboard
+```
+
+### 3. Open the website
+
+Open the `index.html` file in your browser.
+
+Alternatively, use the VS Code Live Server extension to run the project locally.
+
+---
+
+## 🌍 GitHub Pages
+
+This project is hosted using GitHub Pages.
+
+👉 **[Visit the Live Website](https://PariSinghal-5.github.io/healthcare-dashboard/)**
+
+---
+
+## 👩‍💻 Author
+
+**Pari Singhal**
+
+Healthcare Data Analytics & Visualization Project
+
+---
+
+## 📌 Note
+
+This project is intended for educational and data visualization purposes. The dashboards explore patterns and relationships in the dataset and are not intended for medical diagnosis or clinical decision-making.
