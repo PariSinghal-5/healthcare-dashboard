@@ -10,13 +10,6 @@
 
 Explore all four Tableau visualizations to understand patient demographics, health conditions, lifestyle factors, and healthcare risk patterns.
 
----
-
-## 🖼️ Dashboard Preview
-
-![Dashboard Preview](healthcare--dashboard.png.png)
-
----
 
 ## 🎯 Project Objective
 
